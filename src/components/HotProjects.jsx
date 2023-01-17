@@ -143,39 +143,6 @@ const HotProjects = (props) => {
             <Box
               onClick={() => {
                 selectCountry(item.project);
-                // setTimeout(() => {
-                //   setId(item.project);
-                // }, 1000);
-                // props.polygan &&
-                //   props.polygan.mapPolygons._values.forEach((el) => {
-                //     if (
-                //       el._dataItem.dataContext.name === item.project.location
-                //     ) {
-                //       const dataItem = props.polygan.getDataItemById(
-                //         el._dataItem.dataContext.name
-                //       );
-                //       console.log(dataItem, props.polygan);
-                //       props.polygan.zoomToDataItem(el._dataItem);
-                //       // props.setActiveCountry(el._dataItem.dataContext.name); /// ino ya modal box custom kodet ya mal package bashe
-                //     }
-                //   });
-
-                // const target = dataItem.get("mapPolygon");
-                // if (target) {
-                //   const centroid = target.geoCentroid();
-                //   if (centroid) {
-                //     props.polygan.chart.animate({
-                //       key: "rotationX",
-                //       to: -centroid.longitude,
-                //       duration: 1500,
-                //     });
-                //     props.polygan.chart.animate({
-                //       key: "rotationY",
-                //       to: -centroid.latitude,
-                //       duration: 1500,
-                //     });
-                //   }
-                // }
               }}
               display="flex"
               justifyContent="center"
