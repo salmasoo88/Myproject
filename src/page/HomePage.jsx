@@ -9,18 +9,17 @@ import DrawerExamp from "components/darwer";
 import { Box } from "@chakra-ui/react";
 import country from "data/country";
 import cities from "data/cities";
-import bgimages from "assets/images/bgimages.jpg"
+import bgimages from "assets/images/bgimages.jpg";
 import HotProjects from "components/HotProjects";
 import Layout1 from "components/Layout1";
 import BoxTest from "components/BoxTest";
-import { ProSidebarProvider } from 'react-pro-sidebar';
+import { ProSidebarProvider } from "react-pro-sidebar";
 import logo from "assets/images/logo.png";
 
 const HomePage = () => {
-
-  const firstField = React.useRef()
-  //
   const [activeCountry, setActiveCountry] = useState(null);
+  const [polygan, setPolygan] = useState(undefined);
+
   // This code will only run one time
   useLayoutEffect(() => {
     // Create root element
@@ -28,23 +27,26 @@ const HomePage = () => {
     // Set themes
     root.setThemes([am5themes_Animated.new(root)]);
     // Create the map chart
-    const chart = root.container.children.push(am5map.MapChart.new(root, {
-      panX: "rotateX",
-  panY: "rotateY",
-  projection: am5map.geoOrthographic(),
-    }));
+    const chart = root.container.children.push(
+      am5map.MapChart.new(root, {
+        panX: "rotateX",
+        panY: "rotateY",
+        projection: am5map.geoOrthographic(),
+      })
+    );
 
-    var backgroundSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {}));
+    var backgroundSeries = chart.series.push(
+      am5map.MapPolygonSeries.new(root, {})
+    );
     backgroundSeries.mapPolygons.template.setAll({
       // colorofbackgroundofglobe
       fill: am5.color(0x35afc0),
       stroke: am5.color(0x081012),
-      
-      strokeOpacity: 0
-  
+
+      strokeOpacity: 0,
     });
     backgroundSeries.data.push({
-      geometry: am5map.getGeoRectangle(90, 180, -90, -180)
+      geometry: am5map.getGeoRectangle(90, 180, -90, -180),
     });
     // Create main polygon series for countries
     const polygonSeries = chart.series.push(
@@ -65,12 +67,16 @@ const HomePage = () => {
     });
 
     polygonSeries.mapPolygons.template.states.create("hover", {
-     
       fill: am5.color(0xb67edf),
     });
 
+    setPolygan({ chart, polygonSeries });
+
     polygonSeries.mapPolygons.template.on("active", function (_, target) {
-      setActiveCountry(target.dataItem.dataContext.name);
+      setTimeout(() => {
+        setActiveCountry(target.dataItem.dataContext.name);
+      }, 1000);
+      //zoom function
       polygonSeries.zoomToDataItem(target.dataItem);
       homeButton.show();
     });
@@ -86,7 +92,7 @@ const HomePage = () => {
         .map((item) => ({
           id: item?.id,
           polygonSettings: {
-      //countrywithproject
+            //countrywithproject
             fill: am5.color(0xf9c350),
           },
         }))
@@ -156,7 +162,7 @@ const HomePage = () => {
       from: 0,
       to: 360,
       duration: 30000,
-      loops: Infinity
+      loops: Infinity,
     });
     const homeButton = chart.children.push(
       am5.Button.new(root, {
@@ -194,51 +200,44 @@ const HomePage = () => {
   }, []);
   //
   const isOpen = useMemo(() => !!activeCountry, [activeCountry]);
+
   // return
   return (
     <>
-     
-    
-      <HotProjects/>
-   
-      
+      <HotProjects polygan={polygan} setActiveCountry={setActiveCountry} />
       <ModalShowProject
         activeCountry={activeCountry}
         isOpen={isOpen}
         onClose={() => setActiveCountry(null)}
-/>
-
-
-
-
-  
+      />
       <Box
         id="chartdiv"
-        
-         sx={{  width: "100vw", height: "100vh",backgroundImage:bgimages,bgPosition:"center",bgSize:"cover"}}
-        //  bg: "#badcd7" ,backgroundImage:bgimages 
-      >
-       <Box
-        as="img"
         sx={{
-          position: "fixed",
-          left: "10px",
-          top: "10px",
-          zIndex: 9,
-          w: "15%",
+          width: "100vw",
+          height: "100vh",
+          backgroundImage: bgimages,
+          bgPosition: "center",
+          bgSize: "cover",
         }}
-        src={logo}
-        alt=""
-      />
+        //  bg: "#badcd7" ,backgroundImage:bgimages
+      >
+        <Box
+          as="img"
+          sx={{
+            position: "fixed",
+            left: "10px",
+            top: "10px",
+            zIndex: 9,
+            w: "15%",
+          }}
+          src={logo}
+          alt=""
+        />
 
-      <ProSidebarProvider>
-      <Layout1/>
-      </ProSidebarProvider> 
+        <ProSidebarProvider>
+          <Layout1 />
+        </ProSidebarProvider>
       </Box>
-  
-      
-
-      
     </>
   );
 };

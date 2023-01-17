@@ -49,7 +49,7 @@ const ModalShowProject = ({ onClose, isOpen, activeCountry }) => {
       <ModalContent>
         <ModalHeader>{countryName ?? activeCountry}</ModalHeader>
         <ModalCloseButton />
-        <ModalBody px={0} >
+        <ModalBody px={0}>
           <Swiper
             modules={[Navigation, Pagination]}
             navigation
@@ -65,7 +65,13 @@ const ModalShowProject = ({ onClose, isOpen, activeCountry }) => {
             {countryProject?.map((item, i) => {
               return (
                 <SwiperSlide key={i}>
-                  <Box px="45px" mb="50px"  h="60vh" flex="unset" overflow="auto">
+                  <Box
+                    px="45px"
+                    mb="50px"
+                    h="60vh"
+                    flex="unset"
+                    overflow="auto"
+                  >
                     <Heading
                       as="h4"
                       size="md"
@@ -106,7 +112,9 @@ const ModalShowProject = ({ onClose, isOpen, activeCountry }) => {
                             as="img"
                             mb="2"
                             src={item?.image}
-                            width="100%"
+                            width={500}
+                            height={500}
+                            objectFit="cover"
                             alt=""
                           />
                         </Box>
@@ -133,7 +141,5 @@ const ModalShowProject = ({ onClose, isOpen, activeCountry }) => {
     </Modal>
   );
 };
-
-
 
 export default ModalShowProject;

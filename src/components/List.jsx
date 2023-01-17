@@ -1,33 +1,29 @@
 import {
-    List,
-    ListItem,
-    ListIcon,
-    OrderedList,
-    UnorderedList,
-  } from '@chakra-ui/react'
-  import country from 'data/country';
+  List,
+  ListItem,
+  ListIcon,
+  OrderedList,
+  UnorderedList,
+} from "@chakra-ui/react";
+import country from "data/country";
 
+const Listtypess = () => {
+  const test = Object.keys(country).map((item) => item);
 
-  const Listtypess=()=>{
+  Object.keys(country).map((item) => {
+    return (
+      <OrderedList>
+        <ListItem>{{ item }}</ListItem>
+      </OrderedList>
+    );
+  });
 
-const test=Object.keys(country).map((item)=>item)
-
-   
-    Object.keys(country)
-    .map((item)=>{
-        return(
-        <OrderedList>
-            <ListItem>{{item}}</ListItem>
-        </OrderedList>
-        )
-  })
-
-  return(
+  return (
     <UnorderedList>
-        {Object.keys(country).map((item)=><ListItem>{item}</ListItem>)}
-        
+      {Object.keys(country).map((item, i) => (
+        <ListItem key={i}>{item}</ListItem>
+      ))}
     </UnorderedList>
-    )
-    
-}
-export default Listtypess
+  );
+};
+export default Listtypess;
