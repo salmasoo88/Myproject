@@ -1,4 +1,3 @@
-
 export const HelpingYoungPeople = require("assets/images/Project_images/Julia_p1.jfif");
 export const Meera_p1 = require("assets/images/Project_images/Meera_p1.PNG");
 export const Meera_p2 = require("assets/images/Project_images/Meera_p2.JPEG");
@@ -39,7 +38,6 @@ export const shampa_p1 = require("assets/images/Project_images/shampa roy.jpg");
 export const sharone_p1 = require("assets/images/Project_images/sharone lifschitz.jpg");
 export const Siraj_p1 = require("assets/images/Project_images/Lebanon_Sait.jpg");
 
-
 export const Siraj_p2 = require("assets/images/Project_images/Ecuador_Sait.jpg");
 export const Siraj_p3 = require("assets/images/Project_images/Indonesia_Sait.jpg");
 export const Siraj_p4 = require("assets/images/Project_images/Qatar_Sait.jpg");
@@ -56,7 +54,16 @@ export const Siraj_p14 = require("assets/images/Project_images/Poland_Sait.jpg")
 export const Siraj_p15 = require("assets/images/Project_images/Turkey_Sait.jpg");
 export const Siraj_p16 = require("assets/images/Project_images/World Bank_Sait.jpg");
 
-
+export const Canada = require("assets/images/Flag_images/canada.png");
+export const France = require("assets/images/Flag_images/france.png");
+export const Germany = require("assets/images/Flag_images/germany.png");
+export const India = require("assets/images/Flag_images/india.png");
+export const Italy = require("assets/images/Flag_images/italy.png");
+export const Japan = require("assets/images/Flag_images/japan.png");
+export const Saudi_Arabia = require("assets/images/Flag_images/saudi-arabia.png");
+export const Türkiye = require("assets/images/Flag_images/turkey.png");
+export const United_Kingdom = require("assets/images/Flag_images/united-kingdom.png");
+export const United_States = require("assets/images/Flag_images/united-states-of-america.png");
 
 //sharone lifschitz.jpg
 //export const First = require('./photos/first.jpg');
