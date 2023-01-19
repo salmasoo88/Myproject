@@ -72,7 +72,7 @@ const Listtypess = ({ props }) => {
     }, 2000);
   };
   return (
-    <UnorderedList>
+    <UnorderedList py={2}>
       {Object.keys(country).map((item, index) => {
         const flagPath = FlagList.find((flag) => flag.name === item);
         return (
