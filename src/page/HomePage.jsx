@@ -235,7 +235,7 @@ const HomePage = () => {
         />
 
         <ProSidebarProvider>
-          <Layout1 />
+          <Layout1 polygan={polygan} setActiveCountry={setActiveCountry} />
         </ProSidebarProvider>
       </Box>
     </>

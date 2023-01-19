@@ -5,7 +5,7 @@ import Listtypess from "./List";
 import { Box, Fade } from "@chakra-ui/react";
 import logo from "assets/images/logo.png";
 
-const Layout1 = () => {
+const Layout1 = (props) => {
   const { collapseSidebar } = useProSidebar();
 
   return (
@@ -17,9 +17,9 @@ const Layout1 = () => {
         paddingTop: "121px",
       }}
     >
-      <Sidebar>
+      <Sidebar width="80px">
         <Menu>
-          <Listtypess />
+          <Listtypess props={props} />
         </Menu>
       </Sidebar>
     </div>
