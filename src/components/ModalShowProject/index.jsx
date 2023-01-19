@@ -93,17 +93,14 @@ const ModalShowProject = ({ onClose, isOpen, activeCountry }) => {
                     <Stack direction="row">
                       {item?.description && (
                         <Box flex="1">
-                          <Text
+                          <Box
                             fontSize="lg"
                             color="gray.500"
                             textAlign="justify"
-                          >
-                            <div
-                              dangerouslySetInnerHTML={{
-                                __html: item?.description,
-                              }}
-                            />
-                          </Text>
+                            dangerouslySetInnerHTML={{
+                              __html: item?.description,
+                            }}
+                          />
                         </Box>
                       )}
                       {item?.image && (

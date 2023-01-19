@@ -10,9 +10,9 @@ import country from "data/country";
 const Listtypess = () => {
   const test = Object.keys(country).map((item) => item);
 
-  Object.keys(country).map((item) => {
+  Object.keys(country).map((item, index) => {
     return (
-      <OrderedList>
+      <OrderedList key={index}>
         <ListItem>{{ item }}</ListItem>
       </OrderedList>
     );
