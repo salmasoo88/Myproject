@@ -14,7 +14,6 @@ import {
   Australia,
   Austria,
   Bosnia_And_Herzegovina,
-  Bulgaria,
   Canada,
   Chile,
   China,
@@ -22,7 +21,6 @@ import {
   Egypt,
   England,
   Finland,
-  France,
   Germany,
   Greece,
   India,
@@ -34,7 +32,6 @@ import {
   Japan,
   Jordan,
   Kenya,
-  Kosovo,
   Lebanon,
   Malaysia,
   Morocco,
@@ -44,7 +41,6 @@ import {
   Nigeria,
   North_Macedonia,
   Norway,
-  Palestine,
   Poland,
   Qatar,
   Romania,
@@ -67,9 +63,9 @@ import {
 import * as am5 from "@amcharts/amcharts5";
 
 const Listtypess = ({ props }) => {
+  //
   const FlagList = [
     { id: "CA", name: "Canada", flagImage: Canada },
-    // { name: "France", flagImage: France },
     { id: "DE", name: "Germany", flagImage: Germany },
     { id: "IN", name: "India", flagImage: India },
     { id: "IT", name: "Italy", flagImage: Italy },
@@ -122,10 +118,9 @@ const Listtypess = ({ props }) => {
     { id: "NA", name: "Nambia", flagImage: Namibia },
     { id: "SL", name: "Sieraleone", flagImage: Sierraleone },
     { id: "GB", name: "ENGLAND", flagImage: England },
-    //  not in country.js
-    // { id: "TR", name: "Kosovo", flagImage: Kosovo },
-    // { id: "TR", name: "Palestine", flagImage: Palestine },
-    // { id: "TR", name: "Bulgaria", flagImage: Bulgaria },
+    { id: "IT", name: "Rome", flagImage: Italy },
+    { id: "EC", name: "Quito", flagImage: Ecuador },
+    { id: "My", name: "Kuala Lumpur", flagImage: Malaysia },
   ];
 
   Object.keys(country).map((item, index) => {
