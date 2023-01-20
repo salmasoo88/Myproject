@@ -100,6 +100,13 @@ export const Sri_Lanka = require("assets/images/Flag_images/sri-lanka.png");
 export const Syria = require("assets/images/Flag_images/syria.png");
 export const United_Arab_Emirates = require("assets/images/Flag_images/united-arab-emirates.png");
 export const Zambia = require("assets/images/Flag_images/zambia.png");
+export const China = require("assets/images/Flag_images/china.png");
+export const Egypt = require("assets/images/Flag_images/egypt.png");
+export const Uganda = require("assets/images/Flag_images/uganda.png");
+export const Singapore = require("assets/images/Flag_images/singapore.png");
+export const England = require("assets/images/Flag_images/england.png");
+export const Namibia = require("assets/images/Flag_images/namibia.png");
+export const Sierraleone = require("assets/images/Flag_images/sierraleone.png");
 
 //sharone lifschitz.jpg
 //export const First = require('./photos/first.jpg');

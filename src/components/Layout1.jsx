@@ -17,7 +17,7 @@ const Layout1 = (props) => {
         paddingTop: "121px",
       }}
     >
-      <Sidebar width="80px">
+      <Sidebar width="180px">
         <Menu>
           <Listtypess props={props} />
         </Menu>
