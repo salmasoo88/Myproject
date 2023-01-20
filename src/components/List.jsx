@@ -121,9 +121,8 @@ const Listtypess = ({ props }) => {
     { id: "SG", name: "Singapore", flagImage: Singapore },
     { id: "NA", name: "Nambia", flagImage: Namibia },
     { id: "SL", name: "Sieraleone", flagImage: Sierraleone },
-    // id is not correct.
-    { id: "EN", name: "ENGLAND", flagImage: England },
-    // they are not in country.js
+    { id: "GB", name: "ENGLAND", flagImage: England },
+    //  not in country.js
     // { id: "TR", name: "Kosovo", flagImage: Kosovo },
     // { id: "TR", name: "Palestine", flagImage: Palestine },
     // { id: "TR", name: "Bulgaria", flagImage: Bulgaria },
