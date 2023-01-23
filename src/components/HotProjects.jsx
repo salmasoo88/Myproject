@@ -1,8 +1,6 @@
-import { CloseIcon } from "@chakra-ui/icons";
-import { Box, Fade } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import React, { useState } from "react";
 import ModalShowProject from "./ModalSho";
-import ReactPlayer from "react-player/lazy";
 import Ravi_video from "assets/video/Ravi intro REF 2021 FINAL (Captioned by Zubtitle) (1).mp4";
 import Sam_video from "assets/video/Sam Wass intro FINAL (Captioned by Zubtitle).mp4";
 import julie_video from "assets/video/JULIA DAVIDSON - REF - intro - final (Captioned by Zubtitle).mp4";
@@ -64,16 +62,13 @@ const hotProject = [
       description:
         "&#8226Professor Sait advocates for the land ownership rights and independence of women and disadvantaged throughout global south.<br>&#8226   He has spoken about a variety of related issues in front of policy makers such as the UN and was a founding member of the Global Land Tools Network, which has implemented tools for equality in more than 40 countries.",
       Plname: "Michael Pinksy",
-      image: image,
     },
     des: "Fourth Project",
   },
 ];
 
 const HotProjects = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
   const [Id, setId] = useState(null);
-  //console.log(Id);
 
   const selectCountry = (country) => {
     const dataItem = props.polygan.polygonSeries.getDataItemById(country.id);
@@ -107,7 +102,7 @@ const HotProjects = (props) => {
   return (
     //the whole box
     <Box
-      shadow="1g"
+      shadow="lg"
       pos="fixed"
       p="10px"
       right="10px"

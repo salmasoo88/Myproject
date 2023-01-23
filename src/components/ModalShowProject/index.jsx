@@ -10,7 +10,9 @@ import {
   Box,
   Text,
   Divider,
-  Stack,
+  Grid,
+  GridItem,
+  Image,
 } from "@chakra-ui/react";
 import country from "data/country";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -90,10 +92,13 @@ const ModalShowProject = ({ onClose, isOpen, activeCountry }) => {
                       {item?.Plname}
                     </Text>
                     <Divider my={4} />
-                    <Stack direction="row">
+                    <Grid templateColumns="repeat(19,minmax(0,1fr))" gap={5}>
                       {item?.description && (
-                        <Box flex="1">
+                        <GridItem
+                          colSpan={item?.image ? { base: 19, lg: 10 } : 19}
+                        >
                           <Box
+                            lineHeight={1.5}
                             fontSize="lg"
                             color="gray.500"
                             textAlign="justify"
@@ -101,32 +106,40 @@ const ModalShowProject = ({ onClose, isOpen, activeCountry }) => {
                               __html: item?.description,
                             }}
                           />
-                        </Box>
+                        </GridItem>
                       )}
                       {item?.image && (
-                        <Box flex="1">
-                          <Box
-                            as="img"
+                        <GridItem
+                          colSpan={item?.description ? { base: 19, lg: 9 } : 19}
+                        >
+                          <Image
                             mb="2"
                             src={item?.image}
-                            width={500}
-                            height={500}
+                            // MODEL 1
                             objectFit="cover"
-                            alt=""
+                            // MODEL 2
+                            // objectFit="contain"
+                            //
+                            width="100%"
+                            height="380px"
+                            alt="image"
+                            borderRadius="lg"
                           />
-                        </Box>
+                        </GridItem>
                       )}
-                    </Stack>
+                    </Grid>
 
                     {item?.video && (
-                      <ReactPlayer
-                        playing={i === activeIndex && playing}
-                        width="100%"
-                        url={item?.video}
-                        controls={true}
-                        onPlay={() => setPlaying(true)}
-                        onPause={() => setPlaying(false)}
-                      />
+                      <Box my={5}>
+                        <ReactPlayer
+                          playing={i === activeIndex && playing}
+                          width="100%"
+                          url={item?.video}
+                          controls={true}
+                          onPlay={() => setPlaying(true)}
+                          onPause={() => setPlaying(false)}
+                        />
+                      </Box>
                     )}
                   </Box>
                 </SwiperSlide>

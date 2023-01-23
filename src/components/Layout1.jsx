@@ -1,28 +1,27 @@
-import { position } from "@chakra-ui/react";
-import { Sidebar, Menu, MenuItem, useProSidebar } from "react-pro-sidebar";
-import Listtypess from "./List";
-//import "../animating.css"
-import { Box, Fade } from "@chakra-ui/react";
-import logo from "assets/images/logo.png";
+import { Sidebar } from "react-pro-sidebar";
+import ListTypes from "./List";
+import { Box } from "@chakra-ui/react";
 
 const Layout1 = (props) => {
-  const { collapseSidebar } = useProSidebar();
-
   return (
-    <div
-      style={{
+    <Box
+      shadow="lg"
+      border="2px solid #ccc"
+      sx={{
         display: "flex",
-        height: "100%",
+        height: "80%",
         position: "absolute",
-        paddingTop: "121px",
+        bottom: 3,
+        bg: "transparent !important",
       }}
+      mx={3}
+      borderRadius="lg"
+      overflowX="hidden"
     >
       <Sidebar width="180px">
-        <Menu>
-          <Listtypess props={props} />
-        </Menu>
+        <ListTypes props={props} />
       </Sidebar>
-    </div>
+    </Box>
   );
 };
 export default Layout1;

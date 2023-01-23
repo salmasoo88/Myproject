@@ -62,9 +62,9 @@ import {
 } from "data/image_videosExport";
 import * as am5 from "@amcharts/amcharts5";
 
-const Listtypess = ({ props }) => {
+const ListTypes = ({ props }) => {
   //
-  const FlagList = [
+  const flagList = [
     { id: "CA", name: "Canada", flagImage: Canada },
     { id: "DE", name: "Germany", flagImage: Germany },
     { id: "IN", name: "India", flagImage: India },
@@ -77,11 +77,6 @@ const Listtypess = ({ props }) => {
     { id: "DZ", name: "Algeria", flagImage: Algeria },
     { id: "AU", name: "Australia", flagImage: Australia },
     { id: "AT", name: "Austria", flagImage: Austria },
-    {
-      id: "BA",
-      name: "Bosnia and Herzegovina",
-      flagImage: Bosnia_And_Herzegovina,
-    },
     { id: "CL", name: "Chile", flagImage: Chile },
     { id: "EC", name: "Ecuador", flagImage: Ecuador },
     { id: "FI", name: "Finland", flagImage: Finland },
@@ -121,6 +116,11 @@ const Listtypess = ({ props }) => {
     { id: "IT", name: "Rome", flagImage: Italy },
     { id: "EC", name: "Quito", flagImage: Ecuador },
     { id: "My", name: "Kuala Lumpur", flagImage: Malaysia },
+    {
+      id: "BA",
+      name: "Bosnia and Herzegovina",
+      flagImage: Bosnia_And_Herzegovina,
+    },
   ];
 
   Object.keys(country).map((item, index) => {
@@ -161,16 +161,18 @@ const Listtypess = ({ props }) => {
   return (
     <Grid templateColumns="repeat(3,minmax(0,1fr))" p={4} gap={4}>
       {Object.keys(country).map((item, index) => {
-        const flagPath = FlagList.find((flag) => flag.name === item);
+        const flagPath = flagList.find((flag) => flag.name === item);
         return (
           <GridItem key={index} colSpan={1}>
             <Box cursor="pointer" onClick={() => handleClickFlag(flagPath?.id)}>
               <Tooltip label={item}>
                 <Image
-                  width="34px"
-                  height="34px"
+                  width="100%"
+                  height="100%"
                   objectFit="cover"
                   src={flagPath?.flagImage ?? noImage}
+                  border="1px solid #ccc"
+                  borderRadius="full"
                 />
               </Tooltip>
             </Box>
@@ -180,4 +182,4 @@ const Listtypess = ({ props }) => {
     </Grid>
   );
 };
-export default Listtypess;
+export default ListTypes;
