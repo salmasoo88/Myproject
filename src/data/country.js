@@ -4,7 +4,7 @@ import julie_video from "assets/video/JULIA DAVIDSON - REF - intro - final (Capt
 import Richard_video from "assets/video/Richard Lindsay intro REF 21 FINAL (Captioned by Zubtitle) (1).mp4";
 import Ravi_video from "assets/video/Ravi intro REF 2021 FINAL (Captioned by Zubtitle) (1).mp4";
 import Sam_video from "assets/video/Sam Wass intro FINAL (Captioned by Zubtitle).mp4";
-import Siraj from "assets/video/GCRF capacity development on womens land rights_Siraj Sait.mp4"
+import Siraj from "assets/video/GCRF capacity development on womens land rights_Siraj Sait.mp4";
 import image from "assets/images/Pollution.jpeg";
 import image1 from "assets/images/ACE A Conversational AI Approach to Detecting Deception and Tackling Insurance Fraud Julie Wall 4.jpg";
 import {
@@ -59,9 +59,7 @@ import {
   Siraj_p13,
   Siraj_p14,
   Siraj_p15,
-
-  Siraj_p16
-
+  Siraj_p16,
 } from "./image_videosExport.js";
 
 const country = {
@@ -102,7 +100,7 @@ const country = {
       description:
         "&#8226 Through UEL GCRF funding, the gender and land framework were used to promote women’s land rights and empower 200 community womeneadrs. The key partners were the World Association of Sustainable Development, Soroptimist International, and Hassan IAV University (July – August 2019)",
       Plname: "Professor Siraj Sait",
-      video:Siraj
+      video: Siraj,
     },
     {
       location: "United Kingdom ",
@@ -125,8 +123,7 @@ const country = {
     },
     {
       location: "United Kingdom ",
-      title:
-        "Protecting the beaches",
+      title: "Protecting the beaches",
       //description:
       //"&#8226 Community art exhibition with neighbours displaying their art in their windows for all to see on healthy walks through the Borough. ",
       Plname: "Ravindra Jayaratne",
@@ -134,18 +131,26 @@ const country = {
     },
     {
       location: "United Kingdom ",
-      title:
-        "City kids",
+      title: "City kids",
       //description:
       //"&#8226 Community art exhibition with neighbours displaying their art in their windows for all to see on healthy walks through the Borough. ",
       Plname: "Sam Wass",
       video: Sam_video,
     },
+    {
+      location: "United Kingdom",
+      title: "JOMBA! Dance Festival ",
+      description:
+        "&#8226 JOMBA! is a contemporary dance festival, colloquium and writing residency. <br>&#8226The latest festival focused on the theme of ‘BORDER CROSSINGS’ and looked at dance makers, dance companies and performance-based artists who, in some articulated way resonate with the ideas of “BORDER CROSSINGS”; be these geographical, emotional, physical, spiritual and performative. <br>&#8226The JOMBA! Series explores political ideas such as border crossings or the context of archives– who has access to the artefacts, whose voice is the loudest or strongest, whose histories and memories are chosen to represent or stand as a symbol of a movement or moment in time? <br>&#8226Funder: Centre for Creative Arts (University of KwaZulu-Natal) and the National Institute for Humanities & Social Sciences (South Africa) <br>&#8226Key collaborator: Dr Llaine Loots, Artistic Director of JOMBA! Contemporary Dance Experience and The Centre for Creative Arts (University of KwaZulu-Natal) ",
+      Plname: "Sarahleigh Castelyn",
+      img: "images/JOMBA.jpg",
+    },
     //New projects start
     {
       location: "United Kingdom ",
-      title: "Title : Setting up the Settle Lab (Social Entrepreneurship Training via ICT Learning)Environments",
-description:
+      title:
+        "Title : Setting up the Settle Lab (Social Entrepreneurship Training via ICT Learning)Environments",
+      description:
         "&#8226 Funder: Erasumus +.Creation of a platform offering level 3 courses in social entrepreneurship, entailing:- Scoping exercise to establish needs and current provision.Review of compatibility of EQF framework on an international basis.&#8226 Identification of exiting provision.&#8226 Development of training packages.&#8226 Development of web site",
       Plname: "Stephanie Sandland",
     },
@@ -185,7 +190,7 @@ description:
       description:
         "&#8226 Educational bin designed by Product Design students for GreenSeas Trust.",
       Plname: "Emily Hodgkinson, George Davis",
-      image:GreenSeasTrust_p1
+      image: GreenSeasTrust_p1,
     },
     {
       location: "United Kingdom ",
@@ -211,7 +216,7 @@ description:
     },
 
     {
-      location: "Newham and Dudley,United Kindom",
+      location: "United Kindom",
       title: "Addressing Public Involvement in Open Democracy",
       description:
         "&#8226 Public spending and the commissioning of public services is weakened when it does not involve the public. <br>&#8226 	The Young Commissioner model is a tried and tested model to make open democracy real. <br>&#8226 	A range of public bodies, civil servants, healthcare workers, policy makers and communities have benefited from using the young commissioner’s model.",
@@ -226,7 +231,7 @@ description:
       Plname: "Dr Marcello Bertotti",
     },
     {
-      location: "London,United Kingdom",
+      location: "United Kingdom",
       title:
         "Dignity, Gender and Period Poverty; Approaches to Improving Menstrual Health Outcome",
       description:
@@ -298,7 +303,7 @@ description:
       description:
         "&#8226 A free site-specific live art project that explores the themes of Order, Chaos, and Human Connections within the city.   ",
       Plname: "UEL 2nd year drama students ",
-      image:Concrete_p1
+      image: Concrete_p1,
     },
     {
       location: "United Kingdom",
@@ -306,7 +311,7 @@ description:
       description:
         "&#8226 Funded through UEL’s East London Scholars initiative, students investigated the impact that the Living Wage has had on employers and employees in the Royal Docks Enterprise Zone.",
       Plname: "Dr Shampa Roy-Mukherjee",
-      image:shampa_p1
+      image: shampa_p1,
     },
     {
       location: "United Kingdom",
@@ -328,7 +333,7 @@ description:
       description:
         "&#8226  An online international survey of advanced practice nurses and follow-up interviews was conducted. ",
       Plname: "Gulnar Ali",
-      image:gulnar_p1
+      image: gulnar_p1,
     },
     {
       location: "United Kingdom",
@@ -361,9 +366,9 @@ description:
       Plname: "Layal Husain, Virginia Lam ",
     },
 
+    ,
     //
 
-    ,
     {
       location: "United Kingdom",
       title: "Paws and  Pause ",
@@ -410,7 +415,7 @@ description:
       description:
         "&#8226 The DL MSc Humanitarian Intervention created a wellbeing portal to offer mental health and psychosocial support (MHPSS) to international health care practitioners and humanitarian aid workers. <br>&#8226 The portal also offers regular online ‘Reflective Practice Groups’ for humanitarian staff currently working in Ukraine and Afghanistan as a space to foster peer support among colleagues. <br>&#8226 In collaboration with the Humanitarian Leadership Academy and Save The Children we are creating DL delivery of training and training for trainers on Counselling Skills for staff of international humanitarian organizations operating in volatile areas of conflicts and disasters. ",
       Plname: "Lucia Berdondini",
-      image:lucia_berdondini_p1
+      image: lucia_berdondini_p1,
     },
     {
       location: "United Kingdom",
@@ -435,7 +440,7 @@ description:
       description:
         "&#8226  Detecting Deception and Tackling Insurance Fraud Julie Wall 4.jpg ACE Community-Based Transcranial Direct Current Stimulation (tDCS) Treatment for Bipolar Depression: Efficacy, Acceptability and AI-Prediction of Treatment Response based on Neurophysiological Correlates Dr Saeed Sharif, Prof Cynthia Fu .<br>&#8226 The primary aim of the study is to assess the efficacy of a course of tDCS treatment as a home-based intervention, as measured by clinical response.<br>&#8226 The proposed study will be the first to examine the efficacy of home-based tDCS therapy to treat bipolar disorder.<br>&#8226 Providing neural correlates of clinical response for tDCS treatment is a novel scientific measure of clinical outcomes. By applying computational modelling and machine learning to the analysis of resting state EEG coherence, there is potential to predict clinical response to tDCS treatment for bipolar disorder.  ",
       Plname: "Dr Saeed Sharif, Professor Cynthia Fu",
-      fleximage:1,
+      fleximage: 1,
       image: Shareef_p1,
     },
     {
@@ -462,17 +467,16 @@ description:
         "&#8226 This research investigate the significance of keratoconus risk factors in the predictive modelling process. <br>&#8226 This research will impact significantly the ophthalmologists work, as the developed machine learning based model will be able to provide better performance in diagnosis and underpin their work towards better medical care for the patients. <br>&#8226 The achieved model may significantly improve the diagnosis process in the clinical settings as well as provide insight into importance of data collection for specific risk factors.",
       Plname: "Dr Saeed Sharif ",
       image: Shareef_p2,
-
-  },
-  {
-    location: "United Kingdom",
-    title:
-      "Supporting Newham’s COVID recovery and creating local partnerships",
-    description:
-      "&#8226 Funded by UKRI, Professor Sait has carried out research examining and addressing the socioeconomic impacts of COVID on ethnic minority communities in the borough with a team of multidisciplinary experts at UEL and Newham. Professor Sait has been part of further initiatives focused on developing local partnerships including the Newham Chamber of Commerce (2019).",
-    Plname: " Siraj Sait",
-    image:Siraj_p7
-  },
+    },
+    {
+      location: "United Kingdom",
+      title:
+        "Supporting Newham’s COVID recovery and creating local partnerships",
+      description:
+        "&#8226 Funded by UKRI, Professor Sait has carried out research examining and addressing the socioeconomic impacts of COVID on ethnic minority communities in the borough with a team of multidisciplinary experts at UEL and Newham. Professor Sait has been part of further initiatives focused on developing local partnerships including the Newham Chamber of Commerce (2019).",
+      Plname: " Siraj Sait",
+      image: Siraj_p7,
+    },
     {
       location: "United Kingdom",
       title:
@@ -526,13 +530,13 @@ description:
       description:
         "&#8226 Working with the United Nations Environment Programme ‘Global Peatlands Initiative’ we produced both a physical and virtual Peatland Pavilion for COP26 – the first ever Peatland Pavilion for an inter-governmental COP. <br>&#8226 The physical Pavilion was the venue for government commitments from Chile, Indonesia, Ireland, Democratic Republic of Congo, Scotland, Iceland, Canada and the Philippines. <br>&#8226 Funded by the IUCN UK Peatland Programme and the COP26 Peatland Pavilion Partnership (UNEP GPI, Wetlands International, IUCN UK Peatland Programme, Michael Succow Foundation).",
       Plname: "Richard Lindsay and Jack Clough",
-      image:peathland_p1
+      image: peathland_p1,
     },
   ],
 
   Türkiye: [
     {
-      location: "Türkiye",
+      location: "Turkey",
       title:
         "Strengthening housing resilience in Turkey: sustainable strategies for seismic retrofitting decisions ",
       description:
@@ -540,12 +544,12 @@ description:
       Plname: "Dr Anca Ciupala   ",
     },
     {
-      location: "Türkiye",
+      location: "Turkey",
       title: "World Habitat Day",
       description:
         "&#8226 Professor Sait was a keynote speaker at the World Habitat Day celebrations in Belakazir, Turkey hosted by UN-Habitat and the Government of Turkey (2022), to highlight the need for sustainable and inclusive urbanisation and support for a ‘new social contract’ for cities.  ",
       Plname: "Siraj Sait   ",
-      image:Siraj_p15
+      image: Siraj_p15,
     },
   ],
   "Sri Lanka": [
@@ -555,7 +559,7 @@ description:
       description:
         "&#8226 Professor Tribe has worked in partnership with universities, non-governmental organisations and professional organisations in Sri Lanka for 30 years. <br>&#8226 She helped set a mental health resource centre in the community and a wellbeing centre for staff and students at one university and is assisting with setting one up at another university. She has offered training on numerous occasions there. <br>&#8226  She has also run training for the Sri Lankan Office for National Unity and Reconciliation psychosocial team ",
       Plname: "Rachel Tribe  ",
-      image:rachel_p1
+      image: rachel_p1,
     },
     {
       location: "Sri Lanka",
@@ -581,7 +585,7 @@ description:
       description:
         "&#8226 Working with the United Nations Environment Programme ‘Global Peatlands Initiative’ we produced both a physical and virtual Peatland Pavilion for COP26 – the first ever Peatland Pavilion for an inter-governmental COP. <br>&#8226 The physical Pavilion was the venue for government commitments from Chile, Indonesia, Ireland, Democratic Republic of Congo, Scotland, Iceland, Canada and the Philippines. <br>&#8226 Funded by the IUCN UK Peatland Programme and the COP26 Peatland Pavilion Partnership (UNEP GPI, Wetlands International, IUCN UK Peatland Programme, Michael Succow Foundation).",
       Plname: "Richard Lindsay and Jack Clough",
-      image:peathland_p1
+      image: peathland_p1,
     },
     {
       location: "Chile",
@@ -615,7 +619,7 @@ description:
       description:
         "&#8226 India has  77 million diabetics potentially increasing to 100 million in the next decade, 5% can develop severe vision loss. <br>&#8226   This project promotes early detection of retinopathy which can prevent its progress. funded by UKRI ",
       Plname: "Prof Gopal Netuveli (g.netuveli@uel.ac.uk) ",
-      image:Gopal_p1
+      image: Gopal_p1,
     },
     {
       location: "India",
@@ -659,7 +663,6 @@ description:
         "&#8226   Professor Julia Davidson developed a child online protection policy and implementation plan which was adopted by the Rwanda government in 2019. <br>",
       Plname: "Prof Julia Davidson",
     },
-    
   ],
   Austria: [
     {
@@ -675,18 +678,17 @@ description:
       description:
         "&#8226 Professor Sait worked with RMIT Melbourne on an UN-Habitat funded project on land rights and climate change (2021-Present).",
       Plname: "Professor Siraj Sait ",
-      image:Siraj_p10
+      image: Siraj_p10,
     },
   ],
   Germany: [
-    
     {
       location: "Germany",
       title: "Place and Memory Making in Artistic Practice",
       description:
         "&#8226   Films and photographs document both contemporary existence and examine monuments to the past.",
       Plname: "Sharone Lifshitz",
-      image:sharone_p1
+      image: sharone_p1,
     },
     {
       location: "Germany",
@@ -739,23 +741,30 @@ description:
       Plname: "Vassils Fouskas",
       image: Vassils_p1,
     },
-  ],
-  Greece: [
-   
     {
       location: "Bosnia and Herzegovina",
-      title: "Combating the Brain Drain in the Baltics ",
+      title: "Connecting Nature",
+      //  image: image,
       description:
-        "&#8226  Professor Vassilis Fouskas’ economic advice to the government of Bosnia and Herzegovina and the creation of a multi-ethnic business network has contributed to a reduction in outward youth migration in the country.<br>&#8226 In the city of Banja Luka, the network helped increase the graduate employment rate from 14% in 2012 to nearly 50% in 2019. ",
-      Plname: "Vassils Fouskas",
-      image: Vassils_p1,
+        "&#8226 Understanding and helping to remove the barriers that prevent us rapidly decarbonising our communities, buildings, transport and lives. <br>&#8226Unlocking the mainstreaming of nature-based solutions represents a complex challenge requiring novel and multidisciplinary approaches. <br>&#8226Connecting Nature worked with cities across the EU to explore the challenges and opportunities involved in mainstreaming nature-based solutions and provided tools to other cities globally to address this challenge.",
+      Plname: "Stuart Connop & Paula Vandergert",
     },
+  ],
+  Greece: [
     {
       location: "Greece",
       title: "Combatting the Brain Drain in the Baltics",
       description:
         "&#8226 Professor Vassilis Fouskas’ economic advice to the government of Bosnia and Herzegovina and the creation of a multi-ethnic business network has contributed to a reduction in outward youth migration in the country. <br>&#8226  In the city of Banja Luka, the network helped increase the graduate employment rate from 14% in 2012 to nearly 50% in 2019. ",
       Plname: "Vass Fouskas",
+    },
+    {
+      location: "Greece",
+      title: "Connecting Nature",
+      //  image: image,
+      description:
+        "&#8226 Understanding and helping to remove the barriers that prevent us rapidly decarbonising our communities, buildings, transport and lives. <br>&#8226Unlocking the mainstreaming of nature-based solutions represents a complex challenge requiring novel and multidisciplinary approaches. <br>&#8226Connecting Nature worked with cities across the EU to explore the challenges and opportunities involved in mainstreaming nature-based solutions and provided tools to other cities globally to address this challenge.",
+      Plname: "Stuart Connop & Paula Vandergert",
     },
   ],
   macedonia: [
@@ -791,7 +800,7 @@ description:
       description:
         "&#8226   Films and photographs document both contemporary existence and examine monuments to the past.",
       Plname: "Sharone Lifshitz",
-      image:sharone_p1
+      image: sharone_p1,
     },
     {
       location: "China",
@@ -808,27 +817,27 @@ description:
       description:
         "&#8226  An online international survey of advanced practice nurses and follow-up interviews was conducted. ",
       Plname: "Gulnar Ali",
-      image:gulnar_p1
+      image: gulnar_p1,
     },
     {
       location: "China",
-      title: "Small-toMediumEnterprises(SMEs)business ethics,stress management and psychological wellbeing in China",
+      title:
+        "Small-toMediumEnterprises(SMEs)business ethics,stress management and psychological wellbeing in China",
       description:
         "&#8226 The project looked at ways in which SME’s can work more ethically to strengthen client relationships. This was done by motivating public services to develop impartial policies, improve supervision, reduce lawsuit numbers and standardise tax payments to renew trust in their systems and equalize treatment of organisations. The project lead to improving psychological well-being of SMEs CEOs by introducing accounting management systems and customer-relationship-management systems, improving communication efficiency and reduced employee dissatisfaction.",
       Plname: "Qingan Huang",
       //image: Huang_p1,
     },
-  ],
-  ENGLAND: [
     {
-      location: "England",
-      title: "JOMBA! Dance Festival ",
+      location: "China",
+      title: "Connecting Nature",
+      //  image: image,
       description:
-        "&#8226 JOMBA! is a contemporary dance festival, colloquium and writing residency. <br>&#8226The latest festival focused on the theme of ‘BORDER CROSSINGS’ and looked at dance makers, dance companies and performance-based artists who, in some articulated way resonate with the ideas of “BORDER CROSSINGS”; be these geographical, emotional, physical, spiritual and performative. <br>&#8226The JOMBA! Series explores political ideas such as border crossings or the context of archives– who has access to the artefacts, whose voice is the loudest or strongest, whose histories and memories are chosen to represent or stand as a symbol of a movement or moment in time? <br>&#8226Funder: Centre for Creative Arts (University of KwaZulu-Natal) and the National Institute for Humanities & Social Sciences (South Africa) <br>&#8226Key collaborator: Dr Llaine Loots, Artistic Director of JOMBA! Contemporary Dance Experience and The Centre for Creative Arts (University of KwaZulu-Natal) ",
-      Plname: "Sarahleigh Castelyn",
-      img: "images/JOMBA.jpg",
+        "&#8226 Understanding and helping to remove the barriers that prevent us rapidly decarbonising our communities, buildings, transport and lives. <br>&#8226Unlocking the mainstreaming of nature-based solutions represents a complex challenge requiring novel and multidisciplinary approaches. <br>&#8226Connecting Nature worked with cities across the EU to explore the challenges and opportunities involved in mainstreaming nature-based solutions and provided tools to other cities globally to address this challenge.",
+      Plname: "Stuart Connop & Paula Vandergert",
     },
   ],
+
   "South Africa": [
     {
       location: "South Africa",
@@ -853,9 +862,8 @@ description:
       description:
         "&#8226  Examining how mainly man- made factors affect soil fabric.  ",
       Plname: "Arya Assadi- Langroudi",
-      image:Arya_p1
+      image: Arya_p1,
     },
-    
   ],
   "United Arab Emirates": [
     {
@@ -872,7 +880,7 @@ description:
       description:
         "Professor Sait was a keynote speaker at the World Urban Forum held in Abu Dhabi, UAE, which focused on the role of culture and innovation in cities, UN-Habitat. He co-presented the Abu Dhabi WUF10 declaration (2020).",
       Plname: "Professor Siraj Sait",
-      image:Siraj_p9 ,
+      image: Siraj_p9,
     },
   ],
   "United States": [
@@ -891,7 +899,7 @@ description:
       description:
         "&#8226  An online international survey of advanced practice nurses and follow-up interviews was conducted. ",
       Plname: "Gulnar Ali",
-      image:gulnar_p1
+      image: gulnar_p1,
     },
     {
       location: "United States",
@@ -925,7 +933,7 @@ description:
       description:
         "&#8226 Professor Sait has carried several training sessions at the World Bank, on the youth and gender land evaluation criteria, a climate-resilient land administration tool, and an updated knowledge base on land rights for professionals. These projects have been part of a wider set of initiatives that have led to training of over 2,400 delegates from government officials, academic partners, industry, professionals and civil society, and communities in over 24 countries, building capacity to implement responses in these four areas identified.",
       Plname: "Professor Siraj Sait",
-       image: Siraj_p16,
+      image: Siraj_p16,
     },
   ],
   Isreal: [
@@ -935,7 +943,7 @@ description:
       description:
         "&#8226  An online international survey of advanced practice nurses and follow-up interviews was conducted. ",
       Plname: "Gulnar Ali",
-      image:gulnar_p1
+      image: gulnar_p1,
     },
     {
       location: "Isreal",
@@ -943,7 +951,7 @@ description:
       description:
         "&#8226   Films and photographs document both contemporary existence and examine monuments to the past.",
       Plname: "Sharone Lifshitz",
-      image:sharone_p1
+      image: sharone_p1,
     },
   ],
   Nigeria: [
@@ -957,7 +965,7 @@ description:
   ],
   Indonesia: [
     {
-      location: "Indonesia",
+      location: " ",
       title: "Advocating for the rights of the disadvantaged",
       description:
         "&#8226  Professor Sait advocates for the land ownership rights and independence of women and disadvantaged throughout global south.<br>&#8226   He has spoken about a variety of related issues in front of policy makers such as the UN and was a founding member of the Global Land Tools Network, which has implemented tools for equality in more than 40 countries.",
@@ -969,7 +977,7 @@ description:
       description:
         "&#8226  Professor Sait carried out training on Islamic finance for Indonesian government officials, financial regulators, private sector and sharia scholars. This three-day event was supported by the UK’s Department for International Development and the Indonesian Financial Authority (OJK) (2016).",
       Plname: "Siraj Sait",
-      image:Siraj_p3
+      image: Siraj_p3,
     },
   ],
   "Saudi Arabia": [
@@ -986,7 +994,7 @@ description:
       description:
         "&#8226  Professor Sait led training of Saudi Mayors on municipal and land-based finance with the support of UN-Habitat (2019).",
       Plname: "Siraj Sait",
-      image:Siraj_p5
+      image: Siraj_p5,
     },
   ],
   Qatar: [
@@ -1004,7 +1012,7 @@ description:
       description:
         "&#8226  Professor Sait delivered the keynote address at the Qatar Foundation, in Doha, Qatar, reflecting on his pioneering research on matrimonial property rights and Waqf land management (2018).",
       Plname: "Siraj Sait",
-      image:Siraj_p4
+      image: Siraj_p4,
     },
   ],
   Quito: [
@@ -1038,14 +1046,13 @@ description:
       location: "Egypt",
       title:
         "Capacity development and training for the Arab Land Initiative/ World Cities Day",
-       image:Siraj_p13 ,
+      image: Siraj_p13,
       description:
         "&#8226Professor Professor Sait helped to delivery Capacity development and training for the Arab Land Initiative, and was also a keynote speaker at the World Cities Day celebration in Luxor, Egypt, hosted by the Government of Egypt (2021).",
       Plname: "Siraj Sait",
     },
   ],
   Ireland: [
-    
     {
       location: "Ireland",
       title: "Advocating for Better Childcare for Low-Income Families",
@@ -1060,7 +1067,7 @@ description:
       description:
         "&#8226An online international survey of advanced practice nurses and follow-up interviews was conducted. ",
       Plname: "Gulnar Ali",
-      image:gulnar_p1
+      image: gulnar_p1,
     },
     {
       location: "Ireland",
@@ -1105,7 +1112,7 @@ description:
       description:
         "&#8226  An online international survey of advanced practice nurses and follow-up interviews was conducted. ",
       Plname: "Gulnar Ali",
-      image:gulnar_p1
+      image: gulnar_p1,
     },
     {
       location: "Canada",
@@ -1121,7 +1128,7 @@ description:
       description:
         "&#8226 Working with the United Nations Environment Programme ‘Global Peatlands Initiative’ we produced both a physical and virtual Peatland Pavilion for COP26 – the first ever Peatland Pavilion for an inter-governmental COP. <br>&#8226 The physical Pavilion was the venue for government commitments from Chile, Indonesia, Ireland, Democratic Republic of Congo, Scotland, Iceland, Canada and the Philippines. <br>&#8226 Funded by the IUCN UK Peatland Programme and the COP26 Peatland Pavilion Partnership (UNEP GPI, Wetlands International, IUCN UK Peatland Programme, Michael Succow Foundation).",
       Plname: "Richard Lindsay and Jack Clough",
-      image:peathland_p1
+      image: peathland_p1,
     },
     {
       location: "Canada",
@@ -1129,8 +1136,7 @@ description:
       description:
         "&#8226 Funded through UEL’s East London Scholars initiative, students investigated the impact that the Living Wage has had on employers and employees in the Royal Docks Enterprise Zone.",
       Plname: "Shampa RoyMukherjee",
-    
-    }
+    },
   ],
   lebenon: [
     {
@@ -1144,7 +1150,7 @@ description:
     {
       location: "Lebenon",
       title: "Women’s access to land with human rights",
-      image:Siraj_p1 ,
+      image: Siraj_p1,
       description:
         "&#8226 Sait co-led the mapping of women’s access to land with human rights, a global exercise involving three dozen practitioners worldwide supported  by GLTN, UN-Habitat, Arab Union of Surveyors and the Egyptian Urban Training Institute, funded by the Swiss, Norwegian and Dutch development agencies, and launched by the President of Lebanon and the UN Assistant Secretary General. ",
       Plname: " Siraj Sait",
@@ -1176,7 +1182,7 @@ description:
       Plname: "Dr Kathryn Kraft",
       image: Kathryn_p1,
       // img:"images/JOMBA.jpg",
-      //    video: "explore.mp4"
+      // video: "explore.mp4",
     },
   ],
   Norway: [
@@ -1204,6 +1210,14 @@ description:
         "&#8226  Pollutions Pods is a radical, sensory art installation.<br>&#8226  Through collaboration with NITU and expert perfumers, Pinsky recreated the air environment from 5 cities across the globe.<br>&#8226 The Pods demonstrate to visitors the effects of different pollutants on local air quality and highlights the danger of air pollution.",
       Plname: "Michael Pinksy",
       image: Pollution_p1,
+    },
+    {
+      location: "Spain",
+      title: "Connecting Nature",
+      //  image: image,
+      description:
+        "&#8226 Understanding and helping to remove the barriers that prevent us rapidly decarbonising our communities, buildings, transport and lives. <br>&#8226Unlocking the mainstreaming of nature-based solutions represents a complex challenge requiring novel and multidisciplinary approaches. <br>&#8226Connecting Nature worked with cities across the EU to explore the challenges and opportunities involved in mainstreaming nature-based solutions and provided tools to other cities globally to address this challenge.",
+      Plname: "Stuart Connop & Paula Vandergert",
     },
   ],
   Australia: [
@@ -1251,9 +1265,8 @@ description:
         "&#8226 Public spending and the commissioning of public services is weakened when it does not involve the public. <br>&#8226 	The Young Commissioner model is a tried and tested model to make open democracy real. <br>&#8226 	A range of public bodies, civil servants, healthcare workers, policy makers and communities have benefited from using the young commissioner’s model.",
       Plname: "Dr Darren Sharpe ",
     },
-    
   ],
-  Rome: [],
+
   Italy: [
     {
       location: "Italy",
@@ -1261,7 +1274,7 @@ description:
       description:
         "&#8226  A co-produced dance piece which was both scored and choreographed by Harries.<br>&#8226  The piece embodies language as a mineral and as a movement.",
       Plname: "Guy Harries",
-      image:guyharries_p1
+      image: guyharries_p1,
     },
   ],
   Sieraleone: [
@@ -1301,7 +1314,7 @@ description:
       description:
         "&#8226 As Co-chair of the UN-Habitat Stakeholder Advisory Group Enterprise (SAGE) between 2019- 2022, Professor Sait shaped UN-Habitat’s Stakeholder Engagement Policy, with member states (2019)",
       Plname: " Siraj Sait",
-      image:Siraj_p6
+      image: Siraj_p6,
     },
   ],
 
@@ -1324,63 +1337,133 @@ description:
     },
   ],
   Morocco: [
-      {
-           location: " Morocco",
-           title: "GCRF capacity development on women’s land rights ",
-           description:
-             "&#8226Through UEL GCRF funding, the gender and land framework were used to promote women’s land rights and empower 200 community women leaders. The key partners were the World Association of Sustainable Development, Soroptimist International, and Hassan IAV University (July – August 2019) ",
-           Plname: "Professor Siraj Sait",
-           video:Siraj
-         },
-         {
-               location: "Morocco",
-                 title: "Land Governance in North Africa",
-                 description:
-                   "&#8226 Professor Sait served as the international advisor on a GIZ funded project on capacity development on land governance in Northern Africa. He developed the framework for the pioneering scoping study on land tenure for North African Universities, part of the Network of Excellence in Land Governance Africa (NELGA) in Morocco (2020). The research has been published..",
-                 Plname: "Siraj Sait",
-                 image:Siraj_p8
-               },
-      ],
-     "Kuala Lumpur": [
-  {
-         location: " Kuala Lumpur",
-       title: "GCRF capacity development on women’s land rights ",
-       description:
-         "&#8226Through UEL GCRF funding, the gender and land framework were used to promote women’s land rights and empower 200 community women leaders. The key partners were the World Association of Sustainable Development, Soroptimist International, and Hassan IAV University (July – August 2019) ",
-       Plname: "Professor Siraj Sait",
-       video:Siraj
-   },],
-   Ecuador: [
-     {
-       location: "Ecuador",
-       title: "Global Women and Land Tools UN Habitat New Urban Agenda",
-       description:
-         "&#8226 At the Habitat III world conference on sustainable urbanisation in Quito, Ecuador, UEL organised a special side event to present its research on women and land tools, in partnership with the UN Advisory Group on Gender Issues, which contributed to the New Urban Agenda (2016).",
-       Plname: "Professor Siraj Sait",
-        image:Siraj_p2
-     },
-   ],
-   Nambia: [
-  {
-       location: "Nambia",
-       title: "Teaching Essentials on Land Administration for African Universities",
-       description:
-         "&#8226 Professor Sait was a keynote speaker at the Virtual FIG meeting in Windhoek, Namibia, and helped to deliver the ‘Teaching Essentials on Land Administration for African Universities’ supported by UN-Habitat (2021-Present).",
-       Plname: "Siraj Sait",
-       image:Siraj_p12
-     },
-   ],
-   Poland: [
-     {
-           location: "Poland",
-           title: "World Urban Forum 11",
-           description:
-             "&#8226 During the World Urban Forum 11, held in Katowice, Poland, Professor Sait led the drafting of the World Urban Forum Declaration. He also chaired the Parliamentarians Roundtable, and gave the keynote address at the Civil Society Roundtable; UN-Habitat (2022).",
-           Plname: "Siraj Sait",
-           image:Siraj_p14
-         },
-       ],
-
+    {
+      location: " Morocco",
+      title: "GCRF capacity development on women’s land rights ",
+      description:
+        "&#8226Through UEL GCRF funding, the gender and land framework were used to promote women’s land rights and empower 200 community women leaders. The key partners were the World Association of Sustainable Development, Soroptimist International, and Hassan IAV University (July – August 2019) ",
+      Plname: "Professor Siraj Sait",
+      video: Siraj,
+    },
+    {
+      location: "Morocco",
+      title: "Land Governance in North Africa",
+      description:
+        "&#8226 Professor Sait served as the international advisor on a GIZ funded project on capacity development on land governance in Northern Africa. He developed the framework for the pioneering scoping study on land tenure for North African Universities, part of the Network of Excellence in Land Governance Africa (NELGA) in Morocco (2020). The research has been published..",
+      Plname: "Siraj Sait",
+      image: Siraj_p8,
+    },
+  ],
+  "Kuala Lumpur": [
+    {
+      location: " Kuala Lumpur",
+      title: "GCRF capacity development on women’s land rights ",
+      description:
+        "&#8226Through UEL GCRF funding, the gender and land framework were used to promote women’s land rights and empower 200 community women leaders. The key partners were the World Association of Sustainable Development, Soroptimist International, and Hassan IAV University (July – August 2019) ",
+      Plname: "Professor Siraj Sait",
+      video: Siraj,
+    },
+  ],
+  Ecuador: [
+    {
+      location: "Ecuador",
+      title: "Global Women and Land Tools UN Habitat New Urban Agenda",
+      description:
+        "&#8226 At the Habitat III world conference on sustainable urbanisation in Quito, Ecuador, UEL organised a special side event to present its research on women and land tools, in partnership with the UN Advisory Group on Gender Issues, which contributed to the New Urban Agenda (2016).",
+      Plname: "Professor Siraj Sait",
+      image: Siraj_p2,
+    },
+  ],
+  Nambia: [
+    {
+      location: "Nambia",
+      title:
+        "Teaching Essentials on Land Administration for African Universities",
+      description:
+        "&#8226 Professor Sait was a keynote speaker at the Virtual FIG meeting in Windhoek, Namibia, and helped to deliver the ‘Teaching Essentials on Land Administration for African Universities’ supported by UN-Habitat (2021-Present).",
+      Plname: "Siraj Sait",
+      image: Siraj_p12,
+    },
+  ],
+  Poland: [
+    {
+      location: "Poland",
+      title: "World Urban Forum 11",
+      description:
+        "&#8226 During the World Urban Forum 11, held in Katowice, Poland, Professor Sait led the drafting of the World Urban Forum Declaration. He also chaired the Parliamentarians Roundtable, and gave the keynote address at the Civil Society Roundtable; UN-Habitat (2022).",
+      Plname: "Siraj Sait",
+      image: Siraj_p14,
+    },
+    {
+      location: "poland",
+      title: "Connecting Nature",
+      //  image: image,
+      description:
+        "&#8226 Understanding and helping to remove the barriers that prevent us rapidly decarbonising our communities, buildings, transport and lives. <br>&#8226Unlocking the mainstreaming of nature-based solutions represents a complex challenge requiring novel and multidisciplinary approaches. <br>&#8226Connecting Nature worked with cities across the EU to explore the challenges and opportunities involved in mainstreaming nature-based solutions and provided tools to other cities globally to address this challenge.",
+      Plname: "Stuart Connop & Paula Vandergert",
+    },
+  ],
+  //new countriesgit
+  Brazil: [
+    {
+      location: "Brazil",
+      title: "Connecting Nature",
+      //  image: image,
+      description:
+        "&#8226 Understanding and helping to remove the barriers that prevent us rapidly decarbonising our communities, buildings, transport and lives. <br>&#8226Unlocking the mainstreaming of nature-based solutions represents a complex challenge requiring novel and multidisciplinary approaches. <br>&#8226Connecting Nature worked with cities across the EU to explore the challenges and opportunities involved in mainstreaming nature-based solutions and provided tools to other cities globally to address this challenge.",
+      Plname: "Stuart Connop & Paula Vandergert",
+    },
+  ],
+  Belgium: [
+    {
+      location: " Belgium",
+      title: "Connecting Nature",
+      //  image: image,
+      description:
+        "&#8226 Understanding and helping to remove the barriers that prevent us rapidly decarbonising our communities, buildings, transport and lives. <br>&#8226Unlocking the mainstreaming of nature-based solutions represents a complex challenge requiring novel and multidisciplinary approaches. <br>&#8226Connecting Nature worked with cities across the EU to explore the challenges and opportunities involved in mainstreaming nature-based solutions and provided tools to other cities globally to address this challenge.",
+      Plname: "Stuart Connop & Paula Vandergert",
+    },
+  ],
+  "South Korea": [
+    {
+      location: " South Korea",
+      title: "Connecting Nature",
+      //  image: image,
+      description:
+        "&#8226 Understanding and helping to remove the barriers that prevent us rapidly decarbonising our communities, buildings, transport and lives. <br>&#8226Unlocking the mainstreaming of nature-based solutions represents a complex challenge requiring novel and multidisciplinary approaches. <br>&#8226Connecting Nature worked with cities across the EU to explore the challenges and opportunities involved in mainstreaming nature-based solutions and provided tools to other cities globally to address this challenge.",
+      Plname: "Stuart Connop & Paula Vandergert",
+    },
+  ],
+  Scotland: [
+    {
+      location: " Scotland",
+      title: "Connecting Nature",
+      //  image: image,
+      description:
+        "&#8226 Understanding and helping to remove the barriers that prevent us rapidly decarbonising our communities, buildings, transport and lives. <br>&#8226Unlocking the mainstreaming of nature-based solutions represents a complex challenge requiring novel and multidisciplinary approaches. <br>&#8226Connecting Nature worked with cities across the EU to explore the challenges and opportunities involved in mainstreaming nature-based solutions and provided tools to other cities globally to address this challenge.",
+      Plname: "Stuart Connop & Paula Vandergert",
+    },
+  ],
+  Cyprus: [
+    {
+      location: "Cyprus",
+      title: "Connecting Nature",
+      //  image: image,
+      description:
+        "&#8226 Understanding and helping to remove the barriers that prevent us rapidly decarbonising our communities, buildings, transport and lives. <br>&#8226Unlocking the mainstreaming of nature-based solutions represents a complex challenge requiring novel and multidisciplinary approaches. <br>&#8226Connecting Nature worked with cities across the EU to explore the challenges and opportunities involved in mainstreaming nature-based solutions and provided tools to other cities globally to address this challenge.",
+      Plname: "Stuart Connop & Paula Vandergert",
+    },
+  ],
+  Bulgaria: [
+    {
+      location: " Bulgaria",
+      title: "Connecting Nature",
+      //  image: image,
+      description:
+        "&#8226 Understanding and helping to remove the barriers that prevent us rapidly decarbonising our communities, buildings, transport and lives. <br>&#8226Unlocking the mainstreaming of nature-based solutions represents a complex challenge requiring novel and multidisciplinary approaches. <br>&#8226Connecting Nature worked with cities across the EU to explore the challenges and opportunities involved in mainstreaming nature-based solutions and provided tools to other cities globally to address this challenge.",
+      Plname: "Stuart Connop & Paula Vandergert",
+    },
+  ],
 };
 
 export default country;

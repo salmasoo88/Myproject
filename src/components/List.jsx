@@ -13,10 +13,14 @@ import {
   Algeria,
   Australia,
   Austria,
+  Belgium,
   Bosnia_And_Herzegovina,
+  brazil,
+  Bulgaria,
   Canada,
   Chile,
   China,
+  cyprus,
   Ecuador,
   Egypt,
   England,
@@ -46,9 +50,11 @@ import {
   Romania,
   Rwanda,
   Saudi_Arabia,
+  scotland,
   Sierraleone,
   Singapore,
   Slovakia,
+  southKorea,
   South_Africa,
   Spain,
   Sri_Lanka,
@@ -116,6 +122,12 @@ const ListTypes = ({ props }) => {
     { id: "IT", name: "Rome", flagImage: Italy },
     { id: "EC", name: "Quito", flagImage: Ecuador },
     { id: "My", name: "Kuala Lumpur", flagImage: Malaysia },
+    { id: "BE", name: "Belgium", flagImage: Belgium },
+    { id: "BR", name: "Brazil", flagImage: brazil },
+    { id: "CY", name: "Cyprus", flagImage: cyprus },
+    { id: "ST", name: "Scotland", flagImage: scotland },
+    { id: "KR", name: "South Korea", flagImage: southKorea },
+    { id: "BG", name: "Bulgaria", flagImage: Bulgaria },
     {
       id: "BA",
       name: "Bosnia and Herzegovina",
@@ -131,10 +143,10 @@ const ListTypes = ({ props }) => {
     );
   });
 
-  const handleClickFlag = (id) => {
+  const handleClickFlag = ({ id, name }) => {
     const dataItem = props.polygan.polygonSeries.getDataItemById(id);
-    const target = dataItem.get("mapPolygon");
-    if (target) {
+    if (dataItem) {
+      const target = dataItem.get("mapPolygon");
       const centroid = target.geoCentroid();
       if (centroid) {
         props.polygan.chart.animate({
@@ -153,10 +165,10 @@ const ListTypes = ({ props }) => {
           props.polygan.polygonSeries.zoomToDataItem(dataItem);
         }, 1100);
       }
-    }
-    setTimeout(() => {
-      props.setActiveCountry(dataItem.dataContext.name);
-    }, 2000);
+      setTimeout(() => {
+        props.setActiveCountry(dataItem.dataContext.name);
+      }, 2000);
+    } else props.setActiveCountry(name);
   };
   return (
     <Grid templateColumns="repeat(3,minmax(0,1fr))" p={4} gap={4}>
@@ -164,7 +176,12 @@ const ListTypes = ({ props }) => {
         const flagPath = flagList.find((flag) => flag.name === item);
         return (
           <GridItem key={index} colSpan={1}>
-            <Box cursor="pointer" onClick={() => handleClickFlag(flagPath?.id)}>
+            <Box
+              cursor="pointer"
+              onClick={() =>
+                handleClickFlag({ id: flagPath?.id, name: flagPath?.name })
+              }
+            >
               <Tooltip label={item}>
                 <Image
                   width="100%"

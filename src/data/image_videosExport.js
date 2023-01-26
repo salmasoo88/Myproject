@@ -107,7 +107,13 @@ export const Singapore = require("assets/images/Flag_images/singapore.png");
 export const England = require("assets/images/Flag_images/england.png");
 export const Namibia = require("assets/images/Flag_images/namibia.png");
 export const Sierraleone = require("assets/images/Flag_images/sierraleone.png");
-
+export const Belgium = require("assets/images/Flag_images/belgium.png");
+export const brazil = require("assets/images/Flag_images/brazil.png");
+export const cyprus = require("assets/images/Flag_images/cyprus.png");
+export const scotland = require("assets/images/Flag_images/scotland.png");
+export const southKorea = require("assets/images/Flag_images/south-korea.png");
+//
+export const connectingNature = require("assets/images/connecting.png");
 //sharone lifschitz.jpg
 //export const First = require('./photos/first.jpg');
 //export const Second = require('./photos/second.jpg');
