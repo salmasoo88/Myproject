@@ -121,11 +121,11 @@ const ListTypes = ({ props }) => {
     { id: "GB", name: "ENGLAND", flagImage: England },
     { id: "IT", name: "Rome", flagImage: Italy },
     { id: "EC", name: "Quito", flagImage: Ecuador },
-    { id: "My", name: "Kuala Lumpur", flagImage: Malaysia },
+    { id: "MY", name: "Kuala Lumpur", flagImage: Malaysia },
     { id: "BE", name: "Belgium", flagImage: Belgium },
     { id: "BR", name: "Brazil", flagImage: brazil },
     { id: "CY", name: "Cyprus", flagImage: cyprus },
-    { id: "UK", name: "Scotland", flagImage: scotland },
+    { id: "GB", name: "Scotland", flagImage: scotland },
     { id: "KR", name: "South Korea", flagImage: southKorea },
     { id: "BG", name: "Bulgaria", flagImage: Bulgaria },
     {
@@ -166,7 +166,7 @@ const ListTypes = ({ props }) => {
         }, 1100);
       }
       setTimeout(() => {
-        props.setActiveCountry(dataItem.dataContext.name);
+        props.setActiveCountry(name);
       }, 2000);
     } else props.setActiveCountry(name);
   };
