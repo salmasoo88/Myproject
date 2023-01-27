@@ -48,7 +48,7 @@ const cities = [
   },
 
   {
-    title: "Northern Macedonia",
+    title: "North Macedonia",
     latitude: 41.732618315813454,
     longitude: 21.507994406935975,
   },
@@ -83,7 +83,7 @@ const cities = [
     longitude: 10.003427565614691,
   },
   {
-    title: "ISREAL",
+    title: "ISRAEL",
     latitude: 31.001379885990946,
     longitude: 34.88046577599228,
   },
@@ -110,7 +110,6 @@ const cities = [
     longitude: 51.16186406069821,
   },
 
-  
   {
     title: "Algeria",
     latitude: 28.147953572990794,
@@ -198,7 +197,7 @@ const cities = [
     latitude: 61.9241,
     longitude: 25.7482,
   },
-  
+
   {
     title: "Jordan",
     latitude: 31.2134019317909,
@@ -254,8 +253,6 @@ const cities = [
     latitude: 36.2048,
     longitude: 138.2529,
   },
-
-  
 ];
 
 export default cities;

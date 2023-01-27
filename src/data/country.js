@@ -767,7 +767,7 @@ const country = {
       Plname: "Stuart Connop & Paula Vandergert",
     },
   ],
-  macedonia: [
+  "North Macedonia": [
     {
       location: "Northern Macedonia",
       title: "Combatting the brain drain in the Baltics",
@@ -936,9 +936,9 @@ const country = {
       image: Siraj_p16,
     },
   ],
-  Isreal: [
+  Israel: [
     {
-      location: "Isreal",
+      location: "Israel",
       title: "Advanced practice nurses' perceptions of spirituality ",
       description:
         "&#8226  An online international survey of advanced practice nurses and follow-up interviews was conducted. ",
@@ -946,7 +946,7 @@ const country = {
       image: gulnar_p1,
     },
     {
-      location: "Isreal",
+      location: "Israel",
       title: "Place and memory making in artistic practice",
       description:
         "&#8226   Films and photographs document both contemporary existence and examine monuments to the past.",
@@ -1077,7 +1077,7 @@ const country = {
       Plname: "Richard Lindsay",
     },
   ],
-  Netharlands: [
+  Netherlands: [
     {
       location: "Netherlands",
       title: "Advocating for better childcare for low-income families",
@@ -1138,9 +1138,9 @@ const country = {
       Plname: "Shampa RoyMukherjee",
     },
   ],
-  lebenon: [
+  Lebanon: [
     {
-      location: "Lebenon",
+      location: "Lebanon",
       title: "Exploring the role of faith-based groups in humanitarian aid",
       image: Kathryn_p1,
       description:
@@ -1148,7 +1148,7 @@ const country = {
       Plname: " Dr Kathryn Kraft",
     },
     {
-      location: "Lebenon",
+      location: "Lebanon",
       title: "Women’s access to land with human rights",
       image: Siraj_p1,
       description:
@@ -1277,7 +1277,7 @@ const country = {
       image: guyharries_p1,
     },
   ],
-  Sieraleone: [
+  "Sierra Leone": [
     {
       location: "Sierra Leone",
       title:
@@ -1374,9 +1374,9 @@ const country = {
       image: Siraj_p2,
     },
   ],
-  Nambia: [
+  Namibia: [
     {
-      location: "Nambia",
+      location: "Namibia",
       title:
         "Teaching Essentials on Land Administration for African Universities",
       description:
