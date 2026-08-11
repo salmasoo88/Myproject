@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+<p align="center">
+  <img src="./.github/assets/readme-banner.svg" alt="Research Impact Globe" width="100%" />
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  An interactive 3D world map for discovering research projects, people, and impact across countries.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18.2-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/amCharts-5-67B7DC?style=flat-square" alt="amCharts" />
+  <img src="https://img.shields.io/badge/Chakra_UI-2.4-319795?style=flat-square&logo=chakraui&logoColor=white" alt="Chakra UI" />
+  <img src="https://img.shields.io/badge/Firebase-Ready-FFCA28?style=flat-square&logo=firebase&logoColor=black" alt="Firebase" />
+  <img src="https://img.shields.io/badge/Status-Research_Prototype-8B5CF6?style=flat-square" alt="Research prototype" />
+</p>
+
+## Overview
+
+**Research Impact Globe** transforms an international collection of research projects into an explorable digital experience. A continuously rotating orthographic globe highlights countries with associated projects, while animated markers, guided navigation, and rich project modals help visitors move from a global overview to individual stories.
+
+The project combines geospatial visualisation with text, imagery, and video to make multidisciplinary research easier to discover and communicate.
+
+## Highlights
+
+- 🌍 Rotating and zoomable 3D-style world globe
+- 📍 Animated geographic markers for project locations
+- 🟡 Visual highlighting for countries represented in the dataset
+- 🔎 Country selection with smooth focus and zoom behaviour
+- 🖼️ Project galleries with descriptions, images, and video support
+- 🔥 Curated **Hot Projects** panel for featured work
+- 🧭 Sidebar navigation for browsing project categories and locations
+- 📱 Component-based interface built with Chakra UI
+
+## How It Works
+
+1. `HomePage.jsx` initialises the amCharts map using an orthographic projection.
+2. `cities.js` supplies coordinates for animated location markers.
+3. `country.js` groups project records by country.
+4. Selecting a country rotates and zooms the globe to the relevant region.
+5. Project information is presented through Chakra UI modals and Swiper galleries.
+
+## Tech Stack
+
+| Layer | Technologies |
+|---|---|
+| Interface | React 18, Chakra UI, Emotion, Framer Motion |
+| Mapping | amCharts 5, amCharts Geodata |
+| Media | Swiper, ReactPlayer |
+| Data & services | Local JavaScript datasets, Axios, Firebase |
+| Tooling | Create React App, npm / Yarn |
+
+## Project Structure
+
+```text
+src/
+├── assets/                 # Project imagery, flags, and branding
+├── components/             # Modals, navigation, featured projects
+├── data/
+│   ├── cities.js           # Map marker coordinates
+│   ├── country.js          # Country-to-project content
+│   └── image_videosExport.js
+├── page/HomePage.jsx       # Globe rendering and interaction logic
+├── App.js
+└── index.js
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 16 or later
+- npm or Yarn
+
+### Installation
+
+```bash
+git clone https://github.com/salmasoo88/Myproject.git
+cd Myproject
+npm install
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Available Scripts
 
-In the project directory, you can run:
+| Command | Purpose |
+|---|---|
+| `npm start` | Start the local development server |
+| `npm test` | Launch the test runner in watch mode |
+| `npm run build` | Create an optimised production build |
+| `npm run eject` | Expose Create React App configuration |
 
-### `yarn start`
+## Content Model
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Project records can include a location, title, principal investigator, description, image, and video. To add a project, place its media in `src/assets/`, export it through `image_videosExport.js`, and add the corresponding entry to `country.js`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> [!NOTE]
+> Several dataset entries reference local video files. Those media files are not included in the current public repository, so they must be restored or the related imports removed before producing a complete build.
 
-### `yarn test`
+## Project Status
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This repository is a research-communication prototype. It demonstrates interactive geospatial storytelling and is suitable for further work on responsive behaviour, accessibility, content management, testing, and deployment.
 
-### `yarn build`
+## Maintainer
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Salma Soofiyan** — Cybersecurity, AI & Machine Learning Researcher<br>
+[GitHub](https://github.com/salmasoo88) · [LinkedIn](https://www.linkedin.com/in/salma-soofiyan-92033011b/)
