@@ -98,6 +98,17 @@ Project records can include a location, title, principal investigator, descripti
 > [!NOTE]
 > Several dataset entries reference local video files. Those media files are not included in the current public repository, so they must be restored or the related imports removed before producing a complete build.
 
+## Contribution Guide
+
+Useful contributions to this project include:
+
+- validating project records before they are added to the globe dataset;
+- adding accessible labels and keyboard navigation to interactive map controls;
+- introducing fallback behaviour for unavailable images and videos; and
+- testing country selection, rotation, zoom, and modal navigation.
+
+Keep data changes focused, document any new media assets, and verify the globe interaction locally before submitting an update.
+
 ## Project Status
 
 This repository is a research-communication prototype. It demonstrates interactive geospatial storytelling and is suitable for further work on responsive behaviour, accessibility, content management, testing, and deployment.
